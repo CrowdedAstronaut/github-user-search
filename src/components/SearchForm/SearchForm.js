@@ -8,19 +8,21 @@ export default function SearchForm({
   searchString,
 }) {
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="form-horizontal"
-    >
-      <input
-        type="text"
-        placeholder="Search Github username..."
-        name="searchString"
-        required
-        onChange={handleChange}
-        value={searchString}
-      />{" "}
-      <button type="submit"> Search </button>
-    </form>
+    <div className="form-wrapper">
+      <form
+        onSubmit={handleSubmit}
+        className="form-horizontal"
+      >
+        <input
+          type="text"
+          placeholder="Search Github username..."
+          name="searchString"
+          required
+          onChange={handleChange}
+          value={searchString}
+        />{" "}
+        <button type="submit"> Search </button>
+      </form>
+    </div>
   );
 }

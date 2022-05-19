@@ -79,15 +79,24 @@ h1 {
   display: grid;
   max-width: var(--mobile-app-width);
 }
+.form-wrapper {
+  width: 327px;
+}
 
 @media only screen and (min-width: 768px) {
   .container {
     max-width: var(--tablet-app-width);
+  }
+  .form-wrapper {
+    width: 573px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
     max-width: var(--desktop-width);
+  }
+  .form-wrapper {
+    width: 730px;
   }
 }

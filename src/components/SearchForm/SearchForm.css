@@ -31,7 +31,7 @@ form {
   padding: 2px;
   border: 1px solid currentColor;
   border-radius: 5px;
-
+  width: 100%;
   background-color: var(--dm-navy);
 }
 
