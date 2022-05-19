@@ -9,10 +9,7 @@ export default function SearchForm({
 }) {
   return (
     <div className="form-wrapper">
-      <form
-        onSubmit={handleSubmit}
-        className="form-horizontal"
-      >
+      <form onSubmit={handleSubmit} className="form-horizontal">
         <input
           type="text"
           placeholder="Search Github username..."
@@ -21,7 +18,10 @@ export default function SearchForm({
           onChange={handleChange}
           value={searchString}
         />{" "}
-        <button type="submit"> Search </button>
+        <button id="submit-btn" type="submit">
+          {" "}
+          Search{" "}
+        </button>
       </form>
     </div>
   );

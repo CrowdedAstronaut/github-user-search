@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
+* {
+  border: 1px solid red;
+}
+
 /* Set box-sizing for all elements */
 *,
 :after,
@@ -54,9 +58,7 @@ html {
   --desktop-width: 1440px;
 }
 
-* {
-  border: 1px solid red;
-}
+
 /* Remove the body margin */
 body {
   margin: 0;
@@ -83,6 +85,10 @@ h1 {
   width: 327px;
 }
 
+#submit-btn {
+  width: 84px;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     max-width: var(--tablet-app-width);
@@ -90,7 +96,12 @@ h1 {
   .form-wrapper {
     width: 573px;
   }
+  #submit-btn {
+    width: 106px;
+  }
+  
 }
+
 
 @media only screen and (min-width: 1440px) {
   .container {
@@ -99,4 +110,6 @@ h1 {
   .form-wrapper {
     width: 730px;
   }
+ 
+  
 }
