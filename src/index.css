@@ -1,13 +1,133 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+/* Set box-sizing for all elements */
+*,
+:after,
+:before {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Create color variables */
+:root {
+  --lm-royal-blue: #0079ff;
+  --lm-indigo: #697c9a;
+  --lm-violet: #4b6a9b;
+  --lm-black: #2b3442;
+  --uni-light-blue: #f6f8ff;
+  --uni-white: #fefefe;
+  --dm-white: #ffffff;
+  --dm-black: #141d2f;
+  --dm-navy: #1e2a47;
+}
+
+/* Typogoraphy */
+html {
+  --h1-font-size: 26px;
+  --h1-fw: 700;
+  --h1-font-style: normal;
+  --h1-line-height: 39px;
+
+  --h2-font-size: 22px;
+  --h2-fw: 700;
+  --h2-font-style: normal;
+  --h2-line-height: 33px;
+
+  --h3-font-size: 16px;
+  --h3-fw: 400;
+  --h3-font-style: normal;
+  --h3-line-height: 24px;
+
+  --h4-font-size: 13px;
+  --h4-fw: 400;
+  --h4-font-style: normal;
+  --h4-line-height: 20px;
+
+  --body-font-size: 15px;
+  --body-fw: 400;
+  --body-font-style: normal;
+  --body-line-height: 25px;
+}
+/* Remove the body margin */
+body {
+  font-family: "Space Mono";
+  margin: 0;
+  padding: 0 1rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Style the button and tell it not to grow */
+button {
+  background-color: var(--lm-royal-blue);
+  border: 0;
+  color: var(--uni-white);
+  flex-grow: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.75rem 1rem;
+  /* text-transform: uppercase; */
+}
+
+/* Add some margin on the left of any buttons
+that follow another button or an input */
+button + button,
+input + button {
+  margin-left: 2px;
+}
+
+form {
+  padding: 1rem 0;
+}
+
+/* Style the input and tell it to grow */
+input {
+  background-color: var(--dm-navy);
+  /* border: 2px solid var(--secondary); */
+  color: var(--uni-white);
+  flex-grow: 1;
+  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
+/* Set the color of the placeholder text */
+input::placeholder {
+  color: var(--uni-white);
+}
+
+/* Change the background of the input when
+it is focused or hovered and remove its
+default outline */
+input:focus,
+input:hover {
+  background-color: var(--lm-indigo);
+  outline: 0;
+}
+
+/* Apply flex to the form */
+.form-horizontal {
+  align-items: center;
+  display: flex;
+}
+
+img {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.container {
+  max-width: var(--mobile-app-width);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: var(--tablet-app-width);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: var(--desktop-width);
+  }
 }
