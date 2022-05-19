@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 /* Set box-sizing for all elements */
 *,
@@ -85,9 +85,10 @@ h1 {
   width: 327px;
 }
 
-#submit-btn {
+#submit-btn{
   width: 84px;
 }
+
 
 @media only screen and (min-width: 768px) {
   .container {
@@ -95,9 +96,6 @@ h1 {
   }
   .form-wrapper {
     width: 573px;
-  }
-  #submit-btn {
-    width: 106px;
   }
   
 }

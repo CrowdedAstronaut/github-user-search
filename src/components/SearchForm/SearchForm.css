@@ -2,10 +2,17 @@
 button {
   background-color: var(--lm-royal-blue);
   color: var(--uni-white);
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20.73px;
+  font-family: "Space Mono";
+  border-radius: 15px;
+  /* padding: 0.75rem 1rem; */
   /* flex-grow: 0;
   font-size: 1.2rem;
   line-height: 1;
-  padding: 0.75rem 1rem;
+
   text-indent: -999px;
   overflow: hidden;
   border: 1px solid transparent;
@@ -20,16 +27,14 @@ button[type="submit"]:hover {
 
 /* Add some margin on the left of any buttons
   that follow another button or an input */
-button + button,
+/* button + button,
 input + button {
   margin-left: 2px;
-}
+} */
 
 form {
   color: var(--dm-navy);
   display: flex;
-  padding: 2px;
-  border: 1px solid currentColor;
   border-radius: 5px;
   width: 100%;
   background-color: var(--dm-navy);
@@ -37,7 +42,7 @@ form {
 
 /* Style the input and tell it to grow */
 input {
-  background: transparent
+  background: 
     url("https://raw.githubusercontent.com/CrowdedAstronaut/github-user-search/b1cb1acf45a0e340e8396a3e3f5db67275df53fe/src/assets/icons/icon-search.svg")
     no-repeat left;
 
@@ -45,7 +50,7 @@ input {
   color: var(--uni-white);
   flex-grow: 1;
   font-size: 1.2rem;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1.5rem;
   width: 100%;
 }
 
@@ -64,13 +69,21 @@ input:hover {
 }
 
 /* Apply flex to the form */
-/* .form-horizontal {
-  align-items: center;
+.form-horizontal {
+  justify-content: space-between;
   display: flex;
   width: 90%;
-} */
+}
 
 form img {
   margin-bottom: 1rem;
   width: 24px;
 }
+
+@media only screen and (min-width: 768px) {
+  button {
+    width: 104px;
+  }
+}
+  
+
