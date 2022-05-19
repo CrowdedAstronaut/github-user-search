@@ -1,5 +1,6 @@
-import { SearchIcon } from "../AppIcons/AppIcons";
-import search from "../../assets/icons/icon-search.svg";
+// import { SearchIcon } from "../AppIcons/AppIcons";
+// import search from "../../assets/icons/icon-search.svg";
+import "./SearchForm.css";
 
 export default function SearchForm({
   handleChange,

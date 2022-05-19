@@ -47,9 +47,18 @@ html {
   --body-font-style: normal;
   --body-line-height: 25px;
 }
+/* Widths */
+html {
+  --mobile-app-width: 375px;
+  --tablet-app-width: 768px;
+  --desktop-width: 1440px;
+}
+
+* {
+  border: 1px solid red;
+}
 /* Remove the body margin */
 body {
-  font-family: "Space Mono";
   margin: 0;
   padding: 0 1rem;
   display: grid;
@@ -57,66 +66,17 @@ body {
   align-items: center;
 }
 
-/* Style the button and tell it not to grow */
-button {
-  background-color: var(--lm-royal-blue);
-  border: 0;
-  color: var(--uni-white);
-  flex-grow: 0;
-  font-size: 1.2rem;
-  line-height: 1;
-  padding: 0.75rem 1rem;
-  /* text-transform: uppercase; */
-}
-
-/* Add some margin on the left of any buttons
-that follow another button or an input */
-button + button,
-input + button {
-  margin-left: 2px;
-}
-
-form {
-  padding: 1rem 0;
-}
-
-/* Style the input and tell it to grow */
+body,
 input {
-  background-color: var(--dm-navy);
-  /* border: 2px solid var(--secondary); */
+  font-family: "Space Mono";
+  background-color: var(--dm-black);
+}
+h1 {
   color: var(--uni-white);
-  flex-grow: 1;
-  font-size: 1.2rem;
-  padding: 0.75rem 1rem;
-  width: 100%;
-}
-
-/* Set the color of the placeholder text */
-input::placeholder {
-  color: var(--uni-white);
-}
-
-/* Change the background of the input when
-it is focused or hovered and remove its
-default outline */
-input:focus,
-input:hover {
-  background-color: var(--lm-indigo);
-  outline: 0;
-}
-
-/* Apply flex to the form */
-.form-horizontal {
-  align-items: center;
-  display: flex;
-}
-
-img {
-  margin-bottom: 1rem;
-  width: 100%;
 }
 
 .container {
+  display: grid;
   max-width: var(--mobile-app-width);
 }
 

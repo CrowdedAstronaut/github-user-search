@@ -12,7 +12,7 @@ function handleSubmit(event) {
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <h1 className="site-title">devfinder</h1>
       <SearchForm />
     </div>

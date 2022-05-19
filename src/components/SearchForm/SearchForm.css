@@ -1,0 +1,76 @@
+/* Style the button and tell it not to grow */
+button {
+  background-color: var(--lm-royal-blue);
+  color: var(--uni-white);
+  /* flex-grow: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.75rem 1rem;
+  text-indent: -999px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  cursor: pointer;
+  opacity: 0.7; */
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+/* Add some margin on the left of any buttons
+  that follow another button or an input */
+button + button,
+input + button {
+  margin-left: 2px;
+}
+
+form {
+  color: var(--dm-navy);
+  display: flex;
+  padding: 2px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+
+  background-color: var(--dm-navy);
+}
+
+/* Style the input and tell it to grow */
+input {
+  background: transparent
+    url("https://raw.githubusercontent.com/CrowdedAstronaut/github-user-search/b1cb1acf45a0e340e8396a3e3f5db67275df53fe/src/assets/icons/icon-search.svg")
+    no-repeat left;
+
+  /* border: 2px solid var(--secondary); */
+  color: var(--uni-white);
+  flex-grow: 1;
+  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
+/* Set the color of the placeholder text */
+input::placeholder {
+  color: var(--uni-white);
+}
+
+/* Change the background of the input when
+  it is focused or hovered and remove its
+  default outline */
+input:focus,
+input:hover {
+  background-color: var(--lm-indigo);
+  outline: 0;
+}
+
+/* Apply flex to the form */
+/* .form-horizontal {
+  align-items: center;
+  display: flex;
+  width: 90%;
+} */
+
+form img {
+  margin-bottom: 1rem;
+  width: 24px;
+}
