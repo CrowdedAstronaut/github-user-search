@@ -1,5 +1,6 @@
 import "./App.css";
 import SearchForm from "./components/SearchForm/SearchForm";
+import ThemeHeader from "./components/ThemeHeader/ThemeHeader";
 
 function handleChange(event) {
   // setSearchString(event.target.value);
@@ -13,7 +14,7 @@ function handleSubmit(event) {
 function App() {
   return (
     <div className="container">
-      <h1 className="site-title">devfinder</h1>
+      <ThemeHeader />
       <SearchForm />
     </div>
   );

@@ -72,7 +72,7 @@ input:hover {
 .form-horizontal {
   justify-content: space-between;
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 
 form img {
