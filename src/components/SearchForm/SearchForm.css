@@ -8,6 +8,7 @@ button {
   line-height: 20.73px;
   font-family: "Space Mono";
   border-radius: 15px;
+  border: none;
   /* padding: 0.75rem 1rem; */
   /* flex-grow: 0;
   font-size: 1.2rem;
@@ -42,15 +43,14 @@ form {
 
 /* Style the input and tell it to grow */
 input {
-  background: 
-    url("https://raw.githubusercontent.com/CrowdedAstronaut/github-user-search/b1cb1acf45a0e340e8396a3e3f5db67275df53fe/src/assets/icons/icon-search.svg")
+  background: url("https://raw.githubusercontent.com/CrowdedAstronaut/github-user-search/b1cb1acf45a0e340e8396a3e3f5db67275df53fe/src/assets/icons/icon-search.svg")
     no-repeat left;
 
   /* border: 2px solid var(--secondary); */
   color: var(--uni-white);
   flex-grow: 1;
   font-size: 1.2rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 3rem;
   width: 100%;
 }
 
@@ -75,15 +75,13 @@ input:hover {
   width: 100%;
 }
 
-form img {
+/* form img {
   margin-bottom: 1rem;
   width: 24px;
-}
+} */
 
 @media only screen and (min-width: 768px) {
   button {
     width: 104px;
   }
 }
-  
-
